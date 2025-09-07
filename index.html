@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Clothify.com </title>
-  <link rel="icon" type="image/jpg" href="https://www.shutterstock.com/image-illustration/highly-detailed-neon-sign-letter-260nw-94094494.jpg">
+  <link rel="icon" type="image/jpg" href="https://media.istockphoto.com/id/1191570678/vector/golden-cc-monogram.jpg?s=612x612&w=0&k=20&c=Qff7nanfZkksW6By-jp2WDkc2sJEcrca5mgLqiyacFs=">
   <style>
     :root {
       --bg: #f1f3f6;
@@ -43,6 +43,7 @@
       flex: 1;
       margin: 0 15px;
       position: relative;
+      border
     }
     .search input {
       width: 160px;
@@ -261,11 +262,13 @@
 
   <script>
     let products = [
-      {name:" NAVY Shirt",price:499,discount:10,category:"men",img:"https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTklezuOoTOT20UcHVsTH9Cijv1i-cllqI6IxpQmNXr1GAxrVVO_7WWO8LYffQbjhbarZwUs0lxEa_-hwXpBc4zWsf8rAvErWDyJMf1liRadWzl5QnL2Y9GeA",sizes:"M,L,XL"},
-      {name:"Kashvi Petite Kurtis",price:379,discount:15,category:"women",img:"https://images.meesho.com/images/products/557927470/50avr_512.avif?width=512",sizes:"S,M,L,XL,XXL"},
-      {name:"Watch",price:1199,discount:20,category:"accessories",img:"https://media.istockphoto.com/id/1065329058/photo/premium-mens-watch-on-hand-close-up.jpg?s=612x612&w=0&k=20&c=VdpUac8ObrDZZ0I8OCD_vOxPqyOUCa3cM8zoqXsPkuE=",sizes:""},
-      {name:"T-Shirt",price:399,discount:5,category:"men",img:"https://images.bewakoof.com/t1080/men-s-brown-hustle-graphic-printed-oversized-acid-wash-t-shirt-677537-1747462579-1.jpg",sizes:"S,M,L,XL"},
+    {name:" NAVY Shirt",price:499,discount:10,category:"men",img:"https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTklezuOoTOT20UcHVsTH9Cijv1i-cllqI6IxpQmNXr1GAxrVVO_7WWO8LYffQbjhbarZwUs0lxEa_-hwXpBc4zWsf8rAvErWDyJMf1liRadWzl5QnL2Y9GeA",sizes:"M,L,XL"},
+    {name:"Kashvi Petite Kurtis",price:379,discount:15,category:"women",img:"https://images.meesho.com/images/products/557927470/50avr_512.avif?width=512",sizes:"S,M,L,XL,XXL"},
+    {name:"Watch",price:2199,discount:20,category:"accessories",img:"https://media.istockphoto.com/id/1065329058/photo/premium-mens-watch-on-hand-close-up.jpg?s=612x612&w=0&k=20&c=VdpUac8ObrDZZ0I8OCD_vOxPqyOUCa3cM8zoqXsPkuE=",sizes:""},
+    {name:"T-Shirt",price:399,discount:5,category:"men",img:"https://images.bewakoof.com/t1080/men-s-brown-hustle-graphic-printed-oversized-acid-wash-t-shirt-677537-1747462579-1.jpg",sizes:"S,M,L,XL"},
       {name:" Cotton Tshirt – Monkey D. Luffy Edition",price:240,discount:20,category:"men",img:"https://images.meesho.com/images/products/532919516/celpb_512.avif?width=512",sizes:"M,L,XL"},
+    {name:"Wood Portable Laptop Table  ",price:499 ,discount:20,category:"all",img:"https://rukminim2.flixcart.com/image/612/612/xif0q/portable-laptop-table/l/a/l/40-hdf-high-density-fibreboard-smart-multi-purpose-laptop-table-original-imahfpjmrrbygwzf.jpeg?q=70"},
+    {name:"Pocket-size Note Pad UNRULED 50 Pages ",price:249,discount:20,category:"all",img:"https://rukminim2.flixcart.com/image/612/612/xif0q/diary-notebook/m/c/u/coi-memo-note-pad-memo-note-book-with-sticky-notes-clip-holder-original-imahdg7xsdscwykf.jpeg?q=70"},
       {name:" Cotton Casual Shirt Full Sleeve",price:279,discount:5,category:"men",img:"https://images.meesho.com/images/products/572945775/l1rmf_512.avif?width=512",sizes:"S,M,L,XL"},
       {name:" stylish dresses long knee length skater party wear",price:519,discount:10,category:"women",img:"https://images.meesho.com/images/products/329462495/6f681_512.avif?width=512",sizes:"M,L,XL,XXL,3XL,4XL,5XL"},
       {name:" Sweatshirt—Warm Winter Pullover",price:399,discount:10,category:"men",img:"https://images.meesho.com/images/products/579318352/bmemq_512.avif?width=512",sizes:"M,L,XL"},
@@ -295,6 +298,7 @@
       {name:"6 pocket jeans for mens",price:659 ,discount:15,category:"men",img:"https://images.meesho.com/images/products/553684569/eq6ot_512.avif?width=512",sizes:"28,30,32,34"},
       {name:"Pants for Casual, Gym, and Outdoor Wear.",price: 369,discount:20,category:"men",img:"https://images.meesho.com/images/products/541088817/zn07v_512.avif?width=512",sizes:"30,32,34"},
       {name:"Smart casual trousers|",price: 359 ,discount:5,category:"men",img:"https://images.meesho.com/images/products/583132400/trscy_512.avif?width=512",sizes:"28,30,32,32,34"},
+      {name:"Chhipa Decorative Showpiece",price:299 ,discount:20,category:"all",img:"https://rukminim1.flixcart.com/image/680/680/xif0q/showpiece-figurine/n/t/d/8-10-handcrafted-meditating-monk-buddha-idols-statue-sculpture-original-imag72kpdshqqb78.jpeg?q=60"},
       {name:"Cargo Men’s Pants",price: 419,discount:15,category:"men",img:"https://images.meesho.com/images/products/583142129/1roxv_512.avif?width=512",sizes:"26,28,30,32,34"},
       {name:"Track pant for men",price: 359,discount:20,category:"men",img:"https://images.meesho.com/images/products/555717490/tqfat_512.avif?width=512",sizes:"28,30,32"},
       {name:"Lycra Strechable Shorts Pant ",price: 299,discount:5,category:"men",img:"https://images.meesho.com/images/products/507381475/qd8zt_512.avif?width=512",sizes:"30,32,34,36,38"},
@@ -314,6 +318,9 @@
       {name:"Women's Cotton Kurta Pant Set With Dupatta",price:469 ,discount:20,category:"women",img:"https://images.meesho.com/images/products/539382972/jpoq9_512.avif?width=512",sizes:"S,M,L,XL,XXL"},
       {name:"Fluttring Wings TST _Brrown",price: 199 ,discount:5,category:"women",img:"https://images.meesho.com/images/products/540380235/uwcf1_512.avif?width=512",sizes:"S,M,L,XL,XXL"},
       {name:"CUTE GIRL T-shirt",price:239 ,discount:20,category:"women",img:"https://images.meesho.com/images/products/558463555/kgcsg_512.avif?width=512",sizes:"XS,S,M,L"},
+      {name:"Naruto Ninja Set-Kunai ",price:269 ,discount:20,category:"all",img:"https://rukminim2.flixcart.com/image/612/612/xif0q/toy-weapon/h/a/d/naruto-ninja-set-kunai-knife-shuriken-headband-6-stickers-anime-original-imaheguhn7er8fkm.jpeg?q=70"},
+      {name:" Side Clip Accessories 4 PCS Hair Pin ",price:99,discount:20,category:"women",img:"https://rukminim2.flixcart.com/image/612/612/xif0q/shopsy-hair-accessory/8/9/w/girl-set-metal-star-bb-clip-side-clip-accessories-4-pcs-4-4-new-original-imahcavzupshahcg.jpeg?q=70"},
+      {name:"45.1 L Laptop Backpack Hummer Unisex Bag",price:899,discount:20,category:"all",img:"https://rukminim2.flixcart.com/image/612/612/xif0q/backpack/b/r/0/9-hummer-unisex-bag-with-rain-cover-office-school-college-original-imah238svjznzv2y.jpeg?q=70"},
       
       
       
